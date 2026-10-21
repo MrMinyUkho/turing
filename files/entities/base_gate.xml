@@ -1,0 +1,22 @@
+<Entity tags="logic_gate,teleportable_NOT,prop">
+    <VelocityComponent updates_velocity="0" />
+    <SimplePhysicsComponent enabled="0" />
+    
+    <SpriteComponent 
+        image_file="mods/turing/files/gfx/gates/gate_nand.png"
+        offset_x="8"
+        offset_y="8"
+        z_index="30"
+        is_visual="1" >
+    </SpriteComponent>
+    
+    <VariableStorageComponent
+        name="gate_id"
+        value_int="-1" >
+    </VariableStorageComponent>
+
+    <VariableStorageComponent
+        name="gate_type"
+        value_int="1" >
+    </VariableStorageComponent>
+</Entity>

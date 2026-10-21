@@ -1,0 +1,1 @@
+CircuitMgr:SpawnGate(1, x, y)

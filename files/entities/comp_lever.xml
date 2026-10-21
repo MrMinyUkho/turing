@@ -1,0 +1,22 @@
+<Entity tags="logic_gate,logic_input,teleportable_NOT">
+    <SpriteComponent 
+        image_file="mods/turing/files/gfx/components/lever_off.png"
+        offset_x="6"
+        offset_y="6"
+        z_index="30" >
+    </SpriteComponent>
+
+    <InteractableComponent
+        radius="16"
+        ui_text="Переключить рычаг ($0 / $1)" >
+    </InteractableComponent>
+
+    <LuaComponent
+        script_interacting="mods/turing/files/scripts/lever_toggle.lua" >
+    </LuaComponent>
+
+    <VariableStorageComponent
+        name="gate_id"
+        value_int="-1" >
+    </VariableStorageComponent>
+</Entity>

@@ -1,0 +1,35 @@
+<Entity name="circuit_barrier_copy">
+    <VelocityComponent
+        gravity_y="0"
+        air_friction="10" >
+    </VelocityComponent>
+
+    <ProjectileComponent
+        lifetime="60"
+        speed_min="0"
+        speed_max="0"
+        damage="0"
+        collide_with_world="0"
+        on_death_explode="0" >
+    </ProjectileComponent>
+
+    <!-- Скрипт вызывается в момент завершения жизни барьера -->
+    <LuaComponent
+        script_death="mods/turing/files/scripts/area_copy.lua"
+        execute_every_n_frame="-1" >
+    </LuaComponent>
+
+    <!-- Визуальный круг барьера -->
+    <ParticleEmitterComponent
+        emitted_material_name="magic_liquid_mana_regeneration"
+        x_pos_offset_min="-24"
+        y_pos_offset_min="-24"
+        x_pos_offset_max="24"
+        y_pos_offset_max="24"
+        count_min="10"
+        count_max="20"
+        lifetime_min="0.3"
+        lifetime_max="0.6"
+        is_emitting="0" >
+    </ParticleEmitterComponent>
+</Entity>

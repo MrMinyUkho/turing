@@ -1,0 +1,5 @@
+<Mod
+    name="Turing magic"
+    description="Turing-complete logic simulation"
+    request_no_api_restrictions="0" >
+</Mod>
